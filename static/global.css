@@ -36,6 +36,26 @@ body {
   background-color: #f9f9f9;
 }
 
+section {
+  padding: 96px 248px;
+  width: 100%;
+}
+
+section:nth-child(even){
+  background-color: var(--light-gray);
+}
+
+section:nth-child(odd){
+  background-color: var(--white);
+}
+
+.section-title {
+  color: var(--gray);
+  font-size: 3.2rem;  
+  font-family: var(--bold);  
+  line-height: 4.0rem;
+}
+
 .red-text {
   color: var(--red);
 }

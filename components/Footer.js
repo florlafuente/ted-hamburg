@@ -73,6 +73,7 @@ const Footer = () => (
         margin-left: 64px;
       }
       .partners-container {
+        align-items: center;
         display: flex;
         flex-wrap: wrap;
         margin-left: auto;
@@ -85,6 +86,9 @@ const Footer = () => (
       }
       .partners-link img {
         height: 20px;
+      }
+      .partners-link img:last-child {
+        margin-left: 25px;
       }
     `}</style>
   </footer>
