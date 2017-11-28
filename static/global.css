@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Helvetica-Regular;
+  src: url(./Assets/Font/HelveticaNeue/HelveticaNeue-02.ttf);
+}
+
+@font-face {
+  font-family: HelveticaNeue-Bold;
+  src: url(./Assets/Font/HelveticaNeue/HelveticaNeue-Bold-01.ttf);
+}
+
+:root {
+  /* COLOURS */
+  --white: #fff;
+  --black: #000;
+  --red: #FF0000;
+  --light-gray: #F6F6F6;
+  --gray: #262626;
+
+  /* FONTS */
+  --regular: 'Helvetica-Regular';
+  --bold: 'HelveticaNeue-Bold';
+  
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--regular), 'Helvetica Neue', Helvetica, 'Roboto',  Arial, sans-serif;
+  color: var(--black);
+}
+
+body {
+  width: 100vw;
+  background-color: #f9f9f9;
+}
+
+.red-text {
+  color: var(--red);
+}
