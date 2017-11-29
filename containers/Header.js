@@ -1,7 +1,15 @@
-import HeroSlide from '../components/HeroSlide'
+import HeroSlider from '../components/HeroSlider'
+
 const Header = () => (
   <header>
-    <HeroSlide img={'../static/Assets/HeroSlider/Slide1.png'} />
+    <HeroSlider />
+    <style jsx>{`
+      header {
+        background-color: var(--black);
+        padding: 83px 154px 80px 159px;
+        width: 100%;
+      }
+    `}</style>
   </header>
 )
 

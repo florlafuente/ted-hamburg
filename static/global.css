@@ -90,3 +90,22 @@ section:nth-child(odd) {
     position: absolute;
     right: -62px;
 }
+
+header .carousel .flickity-prev-next-button {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+}
+
+header .carousel .flickity-prev-next-button :hover {
+    background: transparent;
+}
+
+header .carousel .flickity-prev-next-button .arrow {
+    fill: #FEFEFE;
+}
+
+header .carousel .flickity-prev-next-button .no-svg {
+    color: #FEFEFE;
+}
+
