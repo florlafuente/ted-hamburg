@@ -1,15 +1,15 @@
-const VideoCard = () => (
+const VideoCard = ({ img, title, category, time }) => (
   <div className='videocard'>
     <div className='videocard-container'>
       <div className='card-category'>
-        <span>Sarasa</span>
+        <span>{category}</span>
       </div>
       <header className='card-header'>
         <img src='../static/Assets/Play/PlaySmall.png' />
-        <span>Sarasa</span>
+        <span>{`"${title}"`}</span>
       </header>
       <div className='card-timer'>
-        <span>23.54</span>
+        <span>{time}</span>
       </div>
     </div>
     <footer className='card-footer'>
@@ -23,13 +23,14 @@ const VideoCard = () => (
     </div>
     <style jsx>{`
       .videocard {
-        background-image: url('../static/Assets/CardsImg/card01.png');
+        background-image: url(${img});
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         flex-wrap: wrap;
         height: 296px;
+        margin-bottom: 16px;
         position: relative;
         width: 302px;
       }
@@ -137,6 +138,7 @@ const VideoCard = () => (
         z-index: 10;
       }
       .videocard:hover .overlay {
+        background: linear-gradient(180deg, rgba(2,2,23,0) 0%, rgba(0,0,0,0.5) 100%);
         height: 218px;
       }
       .videocard:hover .card-footer{
