@@ -11,6 +11,11 @@ const Latest = () => (
     </div>
     <VideoSlider />
     <style jsx>{`
+      .latest-section {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
       .text-container h2 {
         font-family: var(--bold);
         font-size: 3.8rem;  

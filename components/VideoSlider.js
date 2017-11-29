@@ -16,7 +16,16 @@ class VideoSlider extends Component {
   componentDidMount() {
     Flickity = require('flickity')
     const carousel = this.refs.carousel
-    this.flkty = new Flickity(carousel, this.props.options)
+    const options = {
+      pageDots: false,
+      wrapAround: true,
+      cellAlign: 'left',
+      draggable: true,
+      friction: 0.2,
+      contain: true,
+      prevNextButtons: true
+    }
+    this.flkty = new Flickity(carousel, options)
     this.flkty.on('cellSelect', this.updateSelected)
   }
 
@@ -33,6 +42,15 @@ class VideoSlider extends Component {
         {slides.map((sl, i)=> {
           return <VideoSlide key={i} img={sl.img} />
         })}
+        <style jsx>{`
+          .carousel {
+            display: inline-block;
+            height: 380px;
+            margin-left: 48px;
+            width: 624px;
+          }
+        `}
+        </style>
       </div>
     )
   }
