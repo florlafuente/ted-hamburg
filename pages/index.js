@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
+import Header from '../containers/Header'
 import Latest from '../containers/Latest'
 import Grid from '../containers/Grid'
 import About from '../containers/About'
@@ -15,6 +16,7 @@ export default () => (
     </Head>
     <div>
       <Navbar />
+      <Header />
       <Latest />
       <Grid />
       <About />
