@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import VideoSlider from '../components/VideoSlider'
 
 const Latest = () => (
   <section className='latest-section'>
@@ -8,6 +9,7 @@ const Latest = () => (
         <a>See more <img src='../static/Assets/Arrows/ArrowRed.png' /></a>
       </Link>
     </div>
+    <VideoSlider />
     <style jsx>{`
       .text-container h2 {
         font-family: var(--bold);
